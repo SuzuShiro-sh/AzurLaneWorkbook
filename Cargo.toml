@@ -1,3 +1,77 @@
+[package]
+name = "azur-lane-workbook"
+version = "0.1.0-test.1"
+edition = "2024"
+rust-version = "1.88"
+publish = false
+build = "build.rs"
+
 [workspace]
-members = ["crates/adb", "crates/artifact-publish", "crates/capability-core", "crates/cli-args", "crates/content-digest", "crates/controlled-root", "crates/emulator", "crates/host-command", "crates/json-framing", "crates/rpc-core", "crates/secure-channel", "crates/session-core", "crates/target-core", "crates/task-runtime", "crates/text-format", "crates/xlsx-toolkit"]
+members = ["crates/xlsx-toolkit", "crates/adb", "crates/emulator", "crates/artifact-publish", "crates/capability-core", "crates/cli-args", "crates/content-digest", "crates/controlled-root", "crates/host-command", "crates/json-framing", "crates/rpc-core", "crates/secure-channel", "crates/session-core", "crates/target-core", "crates/task-runtime", "crates/text-format"]
+default-members = ["crates/xlsx-toolkit", "crates/adb", "crates/emulator", ".", "crates/artifact-publish", "crates/capability-core", "crates/cli-args", "crates/content-digest", "crates/controlled-root", "crates/host-command", "crates/json-framing", "crates/rpc-core", "crates/secure-channel", "crates/session-core", "crates/target-core", "crates/task-runtime", "crates/text-format"]
 resolver = "3"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = "symbols"
+
+[features]
+default = []
+native-gui-test = []
+native-test-runner = []
+
+[[bin]]
+name = "AzurLaneWorkbook"
+path = "src/main.rs"
+
+[[bin]]
+name = "native_gui_fixture"
+path = "tests/fixtures/native_gui_fixture.rs"
+required-features = ["native-gui-test"]
+
+[[bin]]
+name = "native-test-runner"
+path = "src/bin/native-test-runner.rs"
+required-features = ["native-test-runner"]
+
+[dependencies]
+suzushiro-xlsx-toolkit = { version = "0.1.0", path = "crates/xlsx-toolkit" }
+suzushiro-adb = { version = "0.1.0", path = "crates/adb" }
+suzushiro-emulator = { version = "0.1.0", path = "crates/emulator" }
+calamine = "=0.36.1"
+getrandom = "0.4.3"
+quick-xml = { version = "=0.41.0", features = ["escape-html"] }
+rust_xlsxwriter = "=0.97.1"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = { version = "1.0.151", features = ["float_roundtrip"] }
+serde_path_to_error = "=0.1.20"
+rmcp = { version = "=3.5.1", default-features = false, features = ["server", "transport-io"] }
+tokio = { version = "1", features = ["rt", "sync", "time", "macros"] }
+sha2 = { version = "0.11.0", default-features = false }
+suzushiro-artifact-publish = { version = "0.1.0", path = "crates/artifact-publish" }
+suzushiro-capability-core = { version = "0.1.0", path = "crates/capability-core" }
+suzushiro-cli-args = { version = "0.1.0", path = "crates/cli-args" }
+suzushiro-content-digest = { version = "0.1.0", path = "crates/content-digest" }
+suzushiro-controlled-root = { version = "0.1.0", path = "crates/controlled-root" }
+suzushiro-host-command = { version = "0.1.0", path = "crates/host-command" }
+suzushiro-json-framing = { version = "0.1.0", path = "crates/json-framing" }
+suzushiro-rpc-core = { version = "0.1.0", path = "crates/rpc-core" }
+suzushiro-secure-channel = { version = "0.1.0", path = "crates/secure-channel" }
+suzushiro-session-core = { version = "0.1.0", path = "crates/session-core" }
+suzushiro-target-core = { version = "0.1.0", path = "crates/target-core" }
+suzushiro-task-runtime = { version = "0.1.0", path = "crates/task-runtime" }
+suzushiro-text-format = { version = "0.1.0", path = "crates/text-format" }
+thiserror = "2.0.20"
+zip = { version = "=8.6.0", default-features = false, features = ["deflate"] }
+
+[target.'cfg(windows)'.dependencies]
+eframe = { version = "=0.31.1", default-features = false, features = ["glow", "default_fonts"] }
+image = { version = "=0.25.10", default-features = false, features = ["png"] }
+windows-sys = { version = "=0.61.2", features = ["Win32_Foundation", "Win32_NetworkManagement_IpHelper", "Win32_Networking_WinSock", "Win32_Networking_WinHttp", "Win32_Graphics_Gdi", "Win32_Security", "Win32_Security_Cryptography", "Win32_Storage_FileSystem", "Win32_System_Console", "Win32_System_Diagnostics_ToolHelp", "Win32_System_LibraryLoader", "Win32_System_Registry", "Win32_System_Threading", "Win32_System_Time", "Win32_UI_Controls_Dialogs", "Win32_UI_Input_KeyboardAndMouse", "Win32_UI_Shell", "Win32_UI_WindowsAndMessaging"] }
+
+[target.'cfg(unix)'.dependencies]
+libc = "=0.2.189"
+
+[build-dependencies]
+serde_json = "1.0.151"

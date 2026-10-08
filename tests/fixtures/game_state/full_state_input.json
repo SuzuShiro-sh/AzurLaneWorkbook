@@ -1,0 +1,706 @@
+{
+  "fixture_schema_version": 2,
+  "module_sha256": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+  "owned_state_before": {
+    "schema_version": 3,
+    "complete": true,
+    "dock": {
+      "complete": true,
+      "count": 1,
+      "truncated": false,
+      "ships": [
+        {
+          "ship_id": 9001,
+          "config_id": 101174,
+          "level": 100,
+          "experience_in_level": 3000000,
+          "intimacy_raw": 10000,
+          "energy": 150,
+          "proficiency": 7,
+          "fleet_memberships": [
+            {
+              "fleet_id": 1,
+              "display_name": "第一舰队",
+              "kind": "regular",
+              "team": "vanguard",
+              "position": 1
+            },
+            {
+              "fleet_id": 101,
+              "display_name": "演习舰队",
+              "kind": "exercise",
+              "team": "vanguard",
+              "position": 2
+            }
+          ],
+          "skills": [
+            {
+              "skill_id": 10410,
+              "level": 1,
+              "experience": 25
+            }
+          ],
+          "slots": [
+            {
+              "slot_index": 1,
+              "equipment": {
+                "equipment_id": 8001,
+                "config_id": 1000,
+                "enhance_level": 0
+              }
+            },
+            {
+              "slot_index": 2,
+              "equipment": null
+            },
+            {
+              "slot_index": 3,
+              "equipment": null
+            },
+            {
+              "slot_index": 4,
+              "equipment": null
+            },
+            {
+              "slot_index": 5,
+              "equipment": null
+            }
+          ]
+        }
+      ],
+      "read_errors": []
+    },
+    "warehouse": {
+      "complete": true,
+      "count": 1,
+      "truncated": false,
+      "items": [
+        {
+          "equipment_id": 7001,
+          "config_id": 1001,
+          "quantity": 2,
+          "enhance_level": 1
+        }
+      ],
+      "read_errors": []
+    },
+    "bag": {
+      "schema_version": 1,
+      "complete": true,
+      "count": 2,
+      "truncated": false,
+      "items": [
+        {
+          "item_id": 17001,
+          "quantity": 30,
+          "kind": "bag",
+          "resolved_name": "测试设计图",
+          "compose_recipe": {
+            "recipe_id": 17001,
+            "material_id": 17001,
+            "material_count": 5,
+            "gold": 100,
+            "equipment_id": 1000,
+            "max_count": 6
+          }
+        },
+        {
+          "item_id": 17002,
+          "quantity": 4,
+          "kind": "bag",
+          "resolved_name": "测试零件",
+          "compose_recipe": null
+        }
+      ],
+      "read_errors": []
+    },
+    "player": {
+      "gold": 12345,
+      "equipment_capacity": 2,
+      "equipment_limit": 300
+    }
+  },
+  "owned_state_after": {
+    "schema_version": 3,
+    "complete": true,
+    "dock": {
+      "complete": true,
+      "count": 1,
+      "truncated": false,
+      "ships": [
+        {
+          "ship_id": 9001,
+          "config_id": 101174,
+          "level": 100,
+          "experience_in_level": 3000000,
+          "intimacy_raw": 10000,
+          "energy": 150,
+          "proficiency": 7,
+          "fleet_memberships": [
+            {
+              "fleet_id": 1,
+              "display_name": "第一舰队",
+              "kind": "regular",
+              "team": "vanguard",
+              "position": 1
+            },
+            {
+              "fleet_id": 101,
+              "display_name": "演习舰队",
+              "kind": "exercise",
+              "team": "vanguard",
+              "position": 2
+            }
+          ],
+          "skills": [
+            {
+              "skill_id": 10410,
+              "level": 1,
+              "experience": 25
+            }
+          ],
+          "slots": [
+            {
+              "slot_index": 1,
+              "equipment": {
+                "equipment_id": 8001,
+                "config_id": 1000,
+                "enhance_level": 0
+              }
+            },
+            {
+              "slot_index": 2,
+              "equipment": null
+            },
+            {
+              "slot_index": 3,
+              "equipment": null
+            },
+            {
+              "slot_index": 4,
+              "equipment": null
+            },
+            {
+              "slot_index": 5,
+              "equipment": null
+            }
+          ]
+        }
+      ],
+      "read_errors": []
+    },
+    "warehouse": {
+      "complete": true,
+      "count": 1,
+      "truncated": false,
+      "items": [
+        {
+          "equipment_id": 7001,
+          "config_id": 1001,
+          "quantity": 2,
+          "enhance_level": 1
+        }
+      ],
+      "read_errors": []
+    },
+    "bag": {
+      "schema_version": 1,
+      "complete": true,
+      "count": 2,
+      "truncated": false,
+      "items": [
+        {
+          "item_id": 17001,
+          "quantity": 30,
+          "kind": "bag",
+          "resolved_name": "测试设计图",
+          "compose_recipe": {
+            "recipe_id": 17001,
+            "material_id": 17001,
+            "material_count": 5,
+            "gold": 100,
+            "equipment_id": 1000,
+            "max_count": 6
+          }
+        },
+        {
+          "item_id": 17002,
+          "quantity": 4,
+          "kind": "bag",
+          "resolved_name": "测试零件",
+          "compose_recipe": null
+        }
+      ],
+      "read_errors": []
+    },
+    "player": {
+      "gold": 12345,
+      "equipment_capacity": 2,
+      "equipment_limit": 300
+    }
+  },
+  "ship_details": {
+    "schema_version": 4,
+    "complete": true,
+    "count": 1,
+    "truncated": false,
+    "source": {
+      "module_sha256": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+    },
+    "ships": [
+      {
+        "ship_id": 9001,
+        "config_id": 101174,
+        "name": "测试舰船",
+        "level": 100,
+        "max_level": 125,
+        "experience_in_level": 3000000,
+        "total_experience": 4500000,
+        "next_level_experience": 10000,
+        "intimacy_raw": 10000,
+        "intimacy_maximum": 200,
+        "intimacy_stage_id": 5,
+        "intimacy_stage_description": "爱",
+        "proposed": false,
+        "propose_time": 0,
+        "create_time": 0,
+        "combat_power": 4321,
+        "locked": true,
+        "oil_cost": {
+          "start": 4,
+          "end": 6,
+          "total": 10
+        },
+        "classification": {
+          "group_id": 10117,
+          "ship_type_id": 1,
+          "ship_type_name": "驱逐舰",
+          "armor_type_id": 1,
+          "armor_type_name": "轻型装甲",
+          "nation_id": 1,
+          "nation_name": "白鹰",
+          "rarity": 4,
+          "star": 5,
+          "max_star": 6,
+          "skin_id": 101170
+        },
+        "base_attributes": {
+          "durability": 1000.0,
+          "cannon": 100.0,
+          "torpedo": 80.0,
+          "anti_aircraft": 70.0,
+          "air": 0.0,
+          "reload": 120.0,
+          "hit": 90.0,
+          "dodge": 60.0,
+          "anti_sub": 50.0,
+          "luck": 45.0,
+          "speed": 16.5
+        },
+        "equipment_applied_attributes": {
+          "durability": 1100.0,
+          "cannon": 125.0,
+          "torpedo": 82.0,
+          "anti_aircraft": 75.0,
+          "air": 0.0,
+          "reload": 124.0,
+          "hit": 92.0,
+          "dodge": 58.0,
+          "anti_sub": 52.0,
+          "luck": 45.0,
+          "speed": 15.5
+        },
+        "effective_attributes": {
+          "durability": 1150.0,
+          "cannon": 132.0,
+          "torpedo": 84.0,
+          "anti_aircraft": 79.0,
+          "air": 0.0,
+          "reload": 128.0,
+          "hit": 95.0,
+          "dodge": 59.0,
+          "anti_sub": 54.0,
+          "luck": 46.0,
+          "speed": 16.0
+        },
+        "slot_rules": [
+          {
+            "slot_index": 1,
+            "allowed_equipment_type_ids": [10]
+          },
+          {
+            "slot_index": 2,
+            "allowed_equipment_type_ids": [5, 10]
+          },
+          {
+            "slot_index": 3,
+            "allowed_equipment_type_ids": [6, 21]
+          },
+          {
+            "slot_index": 4,
+            "allowed_equipment_type_ids": [10]
+          },
+          {
+            "slot_index": 5,
+            "allowed_equipment_type_ids": [10]
+          }
+        ],
+        "skills": [
+          {
+            "skill_id": 10410,
+            "effective_skill_id": 10411,
+            "name": "舰船测试技能",
+            "level": 1,
+            "max_level": 10,
+            "experience": 25,
+            "next_level_experience": 100,
+            "description_template": "技能描述模板",
+            "current_effect": "当前效果"
+          }
+        ]
+      }
+    ],
+    "read_errors": []
+  },
+  "equipment": {
+    "config_page_size": 2,
+    "recipe_page_size": 1,
+    "config_pages": [
+      {
+        "schema_version": 1,
+        "complete": true,
+        "count": 2,
+        "source": {
+          "module_sha256": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+        },
+        "start_index": 0,
+        "total_count": 2,
+        "next_index": null,
+        "configs": [
+          {
+            "config_id": 1000,
+            "root_config_id": 1000,
+            "raw_config": {
+              "group": 5000,
+              "name": "测试主炮",
+              "icon": "fixture-cannon",
+              "type": 10,
+              "nationality": 0,
+              "rarity": 4,
+              "tech": 2,
+              "speciality": "追踪",
+              "ammo": 1,
+              "torpedo_ammo": 0,
+              "level": 1,
+              "base": null,
+              "prev": null,
+              "next": 1001,
+              "upgrade_formula_id": [900, 901],
+              "trans_use_gold": 20,
+              "trans_use_item": [[17001, 2], [17002, 1]],
+              "restore_gold": 10,
+              "restore_item": [[17002, 1]],
+              "destory_gold": 5,
+              "destory_item": [[17003, 2]],
+              "important": 1,
+              "equip_limit": 3,
+              "part_main": [1],
+              "part_sub": [2],
+              "ship_type_forbidden": [3],
+              "skill_id": [[10, 1]],
+              "hidden_skill_id": [],
+              "label": ["主炮", "测试"],
+              "descrip": "黄金样本主炮"
+            },
+            "attributes": [
+              {
+                "key": "reload",
+                "value": 4.5,
+                "aux_boost": false
+              },
+              {
+                "key": "cannon",
+                "value": 12.5,
+                "aux_boost": true
+              }
+            ],
+            "properties": {
+              "fixture": true
+            },
+            "skill": null,
+            "property_rate": [1, 0.5],
+            "weapon_ids": [3680],
+            "gear_score": 55,
+            "anti_siren_power": 1.5,
+            "is_device": true,
+            "is_aircraft": false,
+            "complete": true,
+            "read_errors": []
+          },
+          {
+            "config_id": 1001,
+            "root_config_id": 1000,
+            "raw_config": {
+              "group": 5000,
+              "name": "测试主炮+1",
+              "icon": "fixture-cannon-1",
+              "type": 10,
+              "nationality": 0,
+              "rarity": 4,
+              "tech": 2,
+              "speciality": "追踪",
+              "ammo": 1,
+              "torpedo_ammo": 0,
+              "level": 2,
+              "base": 1000,
+              "prev": 1000,
+              "next": null,
+              "upgrade_formula_id": [],
+              "trans_use_gold": 0,
+              "trans_use_item": [],
+              "restore_gold": 15,
+              "restore_item": [[17002, 2]],
+              "destory_gold": 8,
+              "destory_item": [[17003, 3]],
+              "important": 1,
+              "equip_limit": 3,
+              "part_main": [1],
+              "part_sub": [2],
+              "ship_type_forbidden": [3],
+              "skill_id": [[10, 1]],
+              "hidden_skill_id": [],
+              "label": ["主炮", "测试"],
+              "descrip": "黄金样本主炮强化配置"
+            },
+            "attributes": [
+              {
+                "key": "reload",
+                "value": 5.5,
+                "aux_boost": false
+              },
+              {
+                "key": "cannon",
+                "value": 14.5,
+                "aux_boost": true
+              }
+            ],
+            "properties": {
+              "fixture": true,
+              "level": 1
+            },
+            "skill": null,
+            "property_rate": [1, 0.75],
+            "weapon_ids": [3680],
+            "gear_score": 60,
+            "anti_siren_power": 2.0,
+            "is_device": true,
+            "is_aircraft": false,
+            "complete": true,
+            "read_errors": []
+          }
+        ],
+        "read_errors": []
+      }
+    ],
+    "recipe_pages": [
+      {
+        "schema_version": 1,
+        "complete": true,
+        "count": 1,
+        "source": {
+          "module_sha256": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+        },
+        "start_index": 0,
+        "total_count": 1,
+        "next_index": null,
+        "recipes": [
+          {
+            "recipe_id": 17001,
+            "material_id": 17001,
+            "material_count": 5,
+            "gold": 100,
+            "equipment_id": 1000
+          }
+        ],
+        "read_errors": []
+      }
+    ],
+    "reference_names": {
+      "schema_version": 1,
+      "complete": true,
+      "count": 7,
+      "source": {
+        "module_sha256": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+      },
+      "equipment_types": [
+        {
+          "equipment_type_id": 10,
+          "name": "主炮",
+          "error": null
+        }
+      ],
+      "nations": [
+        {
+          "nation_id": 0,
+          "name": "其他",
+          "error": null
+        }
+      ],
+      "ship_types": [
+        {
+          "ship_type_id": 1,
+          "name": "驱逐舰",
+          "error": null
+        },
+        {
+          "ship_type_id": 2,
+          "name": "轻巡洋舰",
+          "error": null
+        },
+        {
+          "ship_type_id": 3,
+          "name": "重巡洋舰",
+          "error": null
+        }
+      ],
+      "attributes": [
+        {
+          "attribute_key": "cannon",
+          "name": "炮击",
+          "error": null
+        },
+        {
+          "attribute_key": "reload",
+          "name": "装填",
+          "error": null
+        }
+      ]
+    },
+    "weapons": [
+      {
+        "weapon_id": 3680,
+        "raw": {
+          "action_index": "attack",
+          "aim_type": 1,
+          "angle": 180,
+          "attack_attribute": 1,
+          "attack_attribute_ratio": 100,
+          "auto_aftercast": 0.3,
+          "axis_angle": 0,
+          "barrage_ID": [1115],
+          "bullet_ID": [19407],
+          "charge_param": {
+            "lockTime": 0.3,
+            "maxLock": 4
+          },
+          "corrected": 125,
+          "damage": 5,
+          "effect_move": 0,
+          "expose": 0,
+          "fire_fx": "CLFire",
+          "fire_fx_loop_type": 1,
+          "fire_sfx": "battle/cannon-155mm",
+          "id": 3680,
+          "initial_over_heat": 0,
+          "min_range": 0,
+          "oxy_type": [1],
+          "precast_param": [],
+          "queue": 1,
+          "range": 70,
+          "recover_time": 0.5,
+          "reload_max": 405,
+          "search_condition": [1],
+          "search_type": 1,
+          "shakescreen": 0,
+          "spawn_bound": "cannon",
+          "suppress": 1,
+          "torpedo_ammo": 0,
+          "type": 2
+        },
+        "complete": true,
+        "read_errors": []
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": 10,
+        "level": 1,
+        "display": {
+          "available": true,
+          "complete": true,
+          "value": {
+            "id": 10,
+            "name": "装备测试技能",
+            "desc": "展示说明",
+            "desc_get": "获得说明",
+            "system_transform": {
+              "lua_type": "table",
+              "entries": [
+                {
+                  "key": 1,
+                  "key_type": "number",
+                  "lua_type": null,
+                  "value": [true, 0.5, "倍率", null]
+                },
+                {
+                  "key": "enabled",
+                  "key_type": "string",
+                  "lua_type": null,
+                  "value": true
+                }
+              ],
+              "truncated": false,
+              "reason": "fixture"
+            }
+          },
+          "error": null,
+          "read_errors": []
+        },
+        "battle_skill": {
+          "available": true,
+          "complete": true,
+          "value": {
+            "id": 108050,
+            "name": "装备测试战斗技能",
+            "desc": "战斗技能说明",
+            "cd": 1.25,
+            "effect_list": [
+              {
+                "type": "BattleBuffCastSkill",
+                "arg_list": {
+                  "enabled": true,
+                  "group": {
+                    "id": 10,
+                    "level": 1
+                  },
+                  "rate": 0.5,
+                  "targets": [1, "x", null]
+                },
+                "target_choise": ["TargetSelf", "TargetAll"],
+                "trigger": ["onUpdate"],
+                "targetetAniEffect": "legacy"
+              }
+            ]
+          },
+          "error": null,
+          "read_errors": []
+        },
+        "battle_buff": {
+          "available": true,
+          "complete": true,
+          "value": {
+            "id": 10,
+            "name": "装备测试 Buff",
+            "desc": "Buff 说明",
+            "time": 5.5,
+            "stack": 2,
+            "effect_list": []
+          },
+          "error": null,
+          "read_errors": []
+        },
+        "complete": true
+      }
+    ]
+  }
+}

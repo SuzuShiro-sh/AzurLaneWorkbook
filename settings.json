@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "device": {
+    "mode": "auto",
+    "adb_path": "",
+    "manager_path": "",
+    "serial": "",
+    "instance": "",
+    "game_package": ""
+  },
+  "workbook": {
+    "ship_acquisition_enabled": false,
+    "acquisition_update_policy": "use_cache"
+  },
+  "runtime": {
+    "connect_timeout_seconds": 30,
+    "startup_timeout_seconds": 180,
+    "agent_mapping_mode": "anonymous_remap",
+    "agent_visibility_mode": "solist_and_elf_header",
+    "unload_after_sync": false
+  },
+  "diagnostics": {
+    "detailed": true
+  }
+}
