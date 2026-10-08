@@ -1,0 +1,17 @@
+[package]
+name = "suzushiro-content-digest"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+description = "Streaming SHA-256 and deterministic sorted-JSON content digests"
+publish = false
+
+[dependencies]
+serde = "1.0.229"
+serde_json = { version = "1.0.151", features = ["float_roundtrip"] }
+sha2 = { version = "0.11.0", default-features = false }
+suzushiro-text-format = { version = "0.1.0", path = "../text-format" }
+
+[dev-dependencies]
+getrandom = "0.4.3"
+serde = { version = "1.0.229", features = ["derive"] }

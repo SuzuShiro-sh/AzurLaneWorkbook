@@ -1,0 +1,6 @@
+# 固定开发和生产构建使用的 Rust 工具链与 Windows 交付目标。
+
+[toolchain]
+channel = "1.92.0"
+profile = "minimal"
+targets = ["x86_64-pc-windows-msvc"]

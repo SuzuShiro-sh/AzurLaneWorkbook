@@ -1,0 +1,15 @@
+[package]
+name = "suzushiro-artifact-publish"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+description = "Bounded, hashed, no-overwrite artifact publication inside a controlled root"
+publish = false
+
+[dependencies]
+suzushiro-content-digest = { version = "0.1.0", path = "../content-digest" }
+suzushiro-controlled-root = { version = "0.1.0", path = "../controlled-root" }
+thiserror = "2.0.20"
+
+[dev-dependencies]
+getrandom = "0.4.3"

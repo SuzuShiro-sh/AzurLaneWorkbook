@@ -1,0 +1,7 @@
+# Windows 构建静态链接 MSVC CRT，发布目录无需附带编译器运行库。
+
+[target.x86_64-pc-windows-msvc]
+rustflags = [
+    "-C", "target-feature=+crt-static",
+    "-C", "link-arg=/PDBALTPATH:%_PDB%",
+]

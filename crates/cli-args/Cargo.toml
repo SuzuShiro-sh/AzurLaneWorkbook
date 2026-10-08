@@ -1,0 +1,7 @@
+[package]
+name = "suzushiro-cli-args"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+description = "Strict paired CLI argument iteration with native path value preservation"
+publish = false

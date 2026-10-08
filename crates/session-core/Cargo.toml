@@ -1,0 +1,15 @@
+[package]
+name = "suzushiro-session-core"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+description = "Fixed-format random session identifiers and redacted session secrets"
+publish = false
+
+[dependencies]
+getrandom = "0.4.3"
+serde = "1.0.229"
+thiserror = "2.0.20"
+
+[dev-dependencies]
+serde_json = "1.0.151"

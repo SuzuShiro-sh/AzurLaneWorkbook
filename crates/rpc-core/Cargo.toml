@@ -1,0 +1,15 @@
+[package]
+name = "suzushiro-rpc-core"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+description = "Transport-independent RPC envelopes, request identifiers, and session directives"
+publish = false
+
+[dependencies]
+serde = { version = "1.0.229", features = ["derive"] }
+suzushiro-text-format = { version = "0.1.0", path = "../text-format" }
+thiserror = "2.0.20"
+
+[dev-dependencies]
+serde_json = "1.0.151"

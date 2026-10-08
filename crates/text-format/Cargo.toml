@@ -1,0 +1,7 @@
+[package]
+name = "suzushiro-text-format"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+description = "No-std predicates for hexadecimal, SHA-256 and ASCII package-name text"
+publish = false

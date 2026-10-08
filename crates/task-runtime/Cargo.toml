@@ -1,0 +1,10 @@
+[package]
+name = "suzushiro-task-runtime"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+description = "Thread-backed task execution with progress, cancellation, and explicit terminal events"
+publish = false
+
+[dependencies]
+thiserror = "2.0.20"

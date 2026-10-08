@@ -1,0 +1,45 @@
+{
+  "description": "Cross-language proof handshake and ordered XChaCha20-Poly1305 frame contract.",
+  "schema_version": 1,
+  "constants": {
+    "channel_version": 1,
+    "server_challenge_type": 1,
+    "client_proof_type": 2,
+    "protected_frame_type": 3,
+    "session_id_bytes": 16,
+    "secret_bytes": 32,
+    "handshake_nonce_bytes": 32,
+    "proof_bytes": 32,
+    "key_bytes": 32,
+    "nonce_prefix_bytes": 16,
+    "aead_nonce_bytes": 24,
+    "aead_tag_bytes": 16,
+    "server_challenge_bytes": 82,
+    "client_proof_bytes": 66,
+    "protected_header_bytes": 10,
+    "protected_overhead_bytes": 26
+  },
+  "labels": {
+    "server_proof": "suzushiro.secure-channel.v1/server-proof",
+    "client_proof": "suzushiro.secure-channel.v1/client-proof",
+    "host_to_agent_key": "suzushiro.secure-channel.v1/host-to-agent-key",
+    "agent_to_host_key": "suzushiro.secure-channel.v1/agent-to-host-key",
+    "host_to_agent_nonce": "suzushiro.secure-channel.v1/host-to-agent-nonce",
+    "agent_to_host_nonce": "suzushiro.secure-channel.v1/agent-to-host-nonce"
+  },
+  "fixture": {
+    "session_id_hex": "000102030405060708090a0b0c0d0e0f",
+    "session_secret_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+    "server_nonce_hex": "202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f",
+    "client_nonce_hex": "404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f",
+    "server_challenge_hex": "0101000102030405060708090a0b0c0d0e0f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f3d0f6f8e28baa6228644fcd61185956191fc594f79a62afaea3dcd3df6e27e6a",
+    "client_proof_hex": "0102404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f867e9232c6fe8a322740827c5df8d2f380df783bb6d20352787a0960f4b431a5",
+    "host_to_agent_key_hex": "e34470e19ec943d4b463f3dc597b546dfafc84139157d5378347d85fc9ccfc3c",
+    "agent_to_host_key_hex": "69c87b27017b92a02ae1126e438948df826b751f5212333c1a049dcac5d9286e",
+    "host_to_agent_nonce_prefix_hex": "c46f943d0f7a20c2aa38c0d7e315a6fb",
+    "agent_to_host_nonce_prefix_hex": "1a50b95e52a65028947847eeec19ff70",
+    "protected_sequence": 7,
+    "protected_plaintext_hex": "7b226f7065726174696f6e223a226865616c7468227d",
+    "protected_frame_hex": "01030000000000000007bb2e044ad7aa478952e66ce84203db8ca519d99ad5b61142a033dd1b56e88fd90ca1999c08b5"
+  }
+}
