@@ -1,0 +1,7 @@
+//! Excel 单元格、数值、时间与工作表边界。
+
+pub const MAX_EXCEL_CELL_UTF16_UNITS: usize = 32_767;
+pub const MAX_EXCEL_DATA_ROWS: usize = 1_048_575;
+pub const MAX_EXCEL_EXACT_INTEGER: i64 = 9_007_199_254_740_991;
+pub const MIN_EXCEL_UNIX_MILLIS: i64 = -2_209_075_200_000;
+pub const MAX_EXCEL_UNIX_MILLIS_EXCLUSIVE: i64 = 253_402_300_800_000;

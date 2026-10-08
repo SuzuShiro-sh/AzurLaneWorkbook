@@ -1,0 +1,22 @@
+[package]
+name = "suzushiro-xlsx-toolkit"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+publish = false
+description = "Bounded XLSX packages, precise OOXML editing and atomic publishing"
+
+[dependencies]
+calamine = "=0.36.1"
+getrandom = "0.4.3"
+quick-xml = "=0.41.0"
+rust_xlsxwriter = "=0.97.1"
+serde = { version = "1.0.229", features = ["derive"] }
+thiserror = "2.0.20"
+zip = { version = "=8.6.0", default-features = false, features = ["deflate"] }
+suzushiro-controlled-root = { version = "0.1.0", path = "../controlled-root" }
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "=0.61.2", features = ["Win32_Foundation", "Win32_Storage_FileSystem", "Win32_Security"] }
+[target.'cfg(unix)'.dependencies]
+libc = "=0.2.189"
