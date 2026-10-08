@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "platform": "windows-x64",
+  "dependencies": [
+    {
+      "id": "cmake",
+      "version": "4.4.3",
+      "cache_bundle": true,
+      "archive": {
+        "url": "https://github.com/Kitware/CMake/releases/download/v4.4.3/cmake-4.4.3-windows-x86_64.zip",
+        "file_name": "cmake-4.4.3-windows-x86_64.zip",
+        "size_bytes": 54408599,
+        "sha256": "4d52ebab7193a698651639ed80d8d04fd903358843572cf44c7fd234cb7c26ab"
+      },
+      "install": {
+        "directory": "tools/cmake/4.4.3/windows-x64",
+        "strip_prefix": "cmake-4.4.3-windows-x86_64",
+        "required_paths": [
+          "bin/cmake.exe",
+          "bin/ctest.exe"
+        ]
+      },
+      "license": {
+        "name": "BSD-3-Clause",
+        "url": "https://cmake.org/licensing/"
+      }
+    },
+    {
+      "id": "ninja",
+      "version": "1.13.2",
+      "cache_bundle": true,
+      "archive": {
+        "url": "https://github.com/ninja-build/ninja/releases/download/v1.13.2/ninja-win.zip",
+        "file_name": "ninja-1.13.2-win.zip",
+        "size_bytes": 291570,
+        "sha256": "07fc8261b42b20e71d1720b39068c2e14ffcee6396b76fb7a795fb460b78dc65"
+      },
+      "install": {
+        "directory": "tools/ninja/1.13.2/windows-x64",
+        "strip_prefix": "",
+        "required_paths": [
+          "ninja.exe"
+        ]
+      },
+      "license": {
+        "name": "Apache-2.0",
+        "url": "https://github.com/ninja-build/ninja/blob/v1.13.2/COPYING"
+      }
+    },
+    {
+      "id": "android-ndk",
+      "version": "29.0.14206865",
+      "cache_bundle": false,
+      "archive": {
+        "url": "https://dl.google.com/android/repository/android-ndk-r29-windows.zip",
+        "file_name": "android-ndk-r29-windows.zip",
+        "size_bytes": 833850862,
+        "sha256": "4f83a1a87ea0d33ae2b43812ce27b768be949bc78acf90b955134d19e3068f1c"
+      },
+      "install": {
+        "directory": "tools/android-ndk/29.0.14206865/windows-x64",
+        "strip_prefix": "android-ndk-r29",
+        "required_paths": [
+          "source.properties",
+          "build/cmake/android.toolchain.cmake",
+          "toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe"
+        ]
+      },
+      "license": {
+        "name": "Android SDK License Agreement and component licenses",
+        "url": "https://developer.android.com/studio/terms"
+      }
+    },
+    {
+      "id": "platform-tools",
+      "version": "37.0.1",
+      "cache_bundle": false,
+      "archive": {
+        "url": "https://dl.google.com/android/repository/platform-tools_r37.0.1-win.zip",
+        "file_name": "platform-tools_r37.0.1-win.zip",
+        "size_bytes": 8044989,
+        "sha256": "45f4d63113e895ebde0c90f194099a4676b6ac653bd28d54314a9e022bbc1a99"
+      },
+      "install": {
+        "directory": "tools/platform-tools/37.0.1/windows-x64",
+        "strip_prefix": "platform-tools",
+        "required_paths": [
+          "adb.exe",
+          "AdbWinApi.dll",
+          "NOTICE.txt",
+          "source.properties"
+        ]
+      },
+      "license": {
+        "name": "Android SDK License Agreement and component licenses",
+        "url": "https://developer.android.com/studio/terms"
+      }
+    }
+  ]
+}
