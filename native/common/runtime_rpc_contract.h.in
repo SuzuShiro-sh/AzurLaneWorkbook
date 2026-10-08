@@ -1,0 +1,60 @@
+// 将共用 RPC v1 JSON 契约转换为原生正式代码使用的编译期常量。
+
+#pragma once
+
+#include <cstddef>
+#include <cstdint>
+#include <string_view>
+
+namespace azlw::runtime_rpc_contract {
+
+inline constexpr std::uint32_t kProtocolVersion = @AZLW_CONTRACT_PROTOCOL_VERSION@;
+inline constexpr char kAgentVersion[] = "@AZLW_CONTRACT_AGENT_VERSION@";
+inline constexpr std::uint32_t kMinimumTimeoutMs = @AZLW_CONTRACT_MINIMUM_TIMEOUT_MS@;
+inline constexpr std::uint32_t kMaximumTimeoutMs = @AZLW_CONTRACT_MAXIMUM_TIMEOUT_MS@;
+inline constexpr std::uint32_t kMaximumHandshakeAttempts =
+    @AZLW_CONTRACT_MAXIMUM_HANDSHAKE_ATTEMPTS@;
+inline constexpr std::uint32_t kUnauthenticatedProbeConnections =
+    @AZLW_CONTRACT_UNAUTHENTICATED_PROBE_CONNECTIONS@;
+inline constexpr std::size_t kMaximumRequestBytes = @AZLW_CONTRACT_MAXIMUM_REQUEST_BYTES@;
+inline constexpr std::size_t kMaximumResponseBytes = @AZLW_CONTRACT_MAXIMUM_RESPONSE_BYTES@;
+inline constexpr std::uint32_t kMaximumSnapshotItems = @AZLW_CONTRACT_MAXIMUM_SNAPSHOT_ITEMS@;
+inline constexpr std::uint32_t kMaximumEquipmentPageSize =
+    @AZLW_CONTRACT_MAXIMUM_EQUIPMENT_PAGE_SIZE@;
+inline constexpr std::uint32_t kMaximumEquipmentFrameSize =
+    @AZLW_CONTRACT_MAXIMUM_EQUIPMENT_FRAME_SIZE@;
+inline constexpr std::uint32_t kMaximumEquipmentCatalogItems =
+    @AZLW_CONTRACT_MAXIMUM_EQUIPMENT_CATALOG_ITEMS@;
+inline constexpr std::uint32_t kMaximumShipCatalogPageSize =
+    @AZLW_CONTRACT_MAXIMUM_SHIP_CATALOG_PAGE_SIZE@;
+inline constexpr std::uint32_t kMaximumShipCatalogFrameSize =
+    @AZLW_CONTRACT_MAXIMUM_SHIP_CATALOG_FRAME_SIZE@;
+inline constexpr std::uint32_t kMaximumDockPageSize =
+    @AZLW_CONTRACT_MAXIMUM_DOCK_PAGE_SIZE@;
+inline constexpr std::uint32_t kMaximumShipCatalogItems =
+    @AZLW_CONTRACT_MAXIMUM_SHIP_CATALOG_ITEMS@;
+inline constexpr std::uint32_t kMaximumEquipmentWeaponBatchSize =
+    @AZLW_CONTRACT_MAXIMUM_EQUIPMENT_WEAPON_BATCH_SIZE@;
+inline constexpr std::uint32_t kMaximumSkillEffectBatchSize =
+    @AZLW_CONTRACT_MAXIMUM_SKILL_EFFECT_BATCH_SIZE@;
+inline constexpr std::uint32_t kMaximumEquipmentReferenceBatchSize =
+    @AZLW_CONTRACT_MAXIMUM_EQUIPMENT_REFERENCE_BATCH_SIZE@;
+inline constexpr std::uint32_t kShipEquipmentSlotCount =
+    @AZLW_CONTRACT_SHIP_EQUIPMENT_SLOT_COUNT@;
+inline constexpr std::uint32_t kMaximumShipSlotEquipmentTypeCount =
+    @AZLW_CONTRACT_MAXIMUM_SHIP_SLOT_EQUIPMENT_TYPE_COUNT@;
+inline constexpr std::uint32_t kMaximumShipSkillCount =
+    @AZLW_CONTRACT_MAXIMUM_SHIP_SKILL_COUNT@;
+inline constexpr std::uint32_t kMaximumFleetTeamShipCount =
+    @AZLW_CONTRACT_MAXIMUM_FLEET_TEAM_SHIP_COUNT@;
+inline constexpr std::uint32_t kMaximumShipFleetMembershipCount =
+    @AZLW_CONTRACT_MAXIMUM_SHIP_FLEET_MEMBERSHIP_COUNT@;
+inline constexpr std::uint32_t kMaximumEnhanceMaterialCount =
+    @AZLW_CONTRACT_MAXIMUM_ENHANCE_MATERIAL_COUNT@;
+
+@AZLW_OPERATION_CONSTANTS@
+inline constexpr std::string_view kRpcOperationNames[] = {
+@AZLW_OPERATION_NAME_LIST@
+};
+
+}  // namespace azlw::runtime_rpc_contract

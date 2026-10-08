@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "profile_id": "bilibili-cn-x86_64-runtime",
+  "protocol_version": 1,
+  "abi": "x86_64",
+  "package_name": "com.bilibili.azurlane",
+  "module_name": "libtolua.so",
+  "module_sha256": "fdf3106d1c35ffa6f0c3fb5a4f70e10698f22f8fb94266493eecd2671221126f",
+  "target_symbol_offset": 81024,
+  "expected_prologue_hex": "555350f30f114c2404f30f110424"
+}

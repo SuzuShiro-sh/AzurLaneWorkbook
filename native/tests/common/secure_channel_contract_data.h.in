@@ -1,0 +1,25 @@
+// 将共享 secure-channel v1 样本转换为 Native 测试数据。
+
+#pragma once
+
+#include <cstdint>
+
+namespace azlw::secure_channel_test_contract {
+
+inline constexpr char kSessionIdHex[] = "@AZLW_SECURE_FIXTURE_SESSION_ID_HEX@";
+inline constexpr char kSessionSecretHex[] = "@AZLW_SECURE_FIXTURE_SESSION_SECRET_HEX@";
+inline constexpr char kServerNonceHex[] = "@AZLW_SECURE_FIXTURE_SERVER_NONCE_HEX@";
+inline constexpr char kClientNonceHex[] = "@AZLW_SECURE_FIXTURE_CLIENT_NONCE_HEX@";
+inline constexpr char kServerChallengeHex[] = "@AZLW_SECURE_FIXTURE_SERVER_CHALLENGE_HEX@";
+inline constexpr char kClientProofHex[] = "@AZLW_SECURE_FIXTURE_CLIENT_PROOF_HEX@";
+inline constexpr char kHostToAgentKeyHex[] = "@AZLW_SECURE_FIXTURE_HOST_TO_AGENT_KEY_HEX@";
+inline constexpr char kAgentToHostKeyHex[] = "@AZLW_SECURE_FIXTURE_AGENT_TO_HOST_KEY_HEX@";
+inline constexpr char kHostToAgentNoncePrefixHex[] =
+    "@AZLW_SECURE_FIXTURE_HOST_TO_AGENT_NONCE_PREFIX_HEX@";
+inline constexpr char kAgentToHostNoncePrefixHex[] =
+    "@AZLW_SECURE_FIXTURE_AGENT_TO_HOST_NONCE_PREFIX_HEX@";
+inline constexpr std::uint64_t kProtectedSequence = @AZLW_SECURE_FIXTURE_PROTECTED_SEQUENCE@;
+inline constexpr char kProtectedPlaintextHex[] = "@AZLW_SECURE_FIXTURE_PROTECTED_PLAINTEXT_HEX@";
+inline constexpr char kProtectedFrameHex[] = "@AZLW_SECURE_FIXTURE_PROTECTED_FRAME_HEX@";
+
+}  // namespace azlw::secure_channel_test_contract

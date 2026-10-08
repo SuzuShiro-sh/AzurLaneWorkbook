@@ -1,0 +1,34 @@
+// 将共享 secure-channel v1 契约转换为 Native 编译期常量。
+
+#pragma once
+
+#include <cstddef>
+#include <cstdint>
+
+namespace azlw::secure_channel_contract {
+
+inline constexpr std::uint8_t kChannelVersion = @AZLW_SECURE_CHANNEL_VERSION@;
+inline constexpr std::uint8_t kServerChallengeType = @AZLW_SECURE_SERVER_CHALLENGE_TYPE@;
+inline constexpr std::uint8_t kClientProofType = @AZLW_SECURE_CLIENT_PROOF_TYPE@;
+inline constexpr std::uint8_t kProtectedFrameType = @AZLW_SECURE_PROTECTED_FRAME_TYPE@;
+inline constexpr std::size_t kSessionIdBytes = @AZLW_SECURE_SESSION_ID_BYTES@;
+inline constexpr std::size_t kSecretBytes = @AZLW_SECURE_SECRET_BYTES@;
+inline constexpr std::size_t kHandshakeNonceBytes = @AZLW_SECURE_HANDSHAKE_NONCE_BYTES@;
+inline constexpr std::size_t kProofBytes = @AZLW_SECURE_PROOF_BYTES@;
+inline constexpr std::size_t kKeyBytes = @AZLW_SECURE_KEY_BYTES@;
+inline constexpr std::size_t kNoncePrefixBytes = @AZLW_SECURE_NONCE_PREFIX_BYTES@;
+inline constexpr std::size_t kAeadNonceBytes = @AZLW_SECURE_AEAD_NONCE_BYTES@;
+inline constexpr std::size_t kAeadTagBytes = @AZLW_SECURE_AEAD_TAG_BYTES@;
+inline constexpr std::size_t kServerChallengeBytes = @AZLW_SECURE_SERVER_CHALLENGE_BYTES@;
+inline constexpr std::size_t kClientProofBytes = @AZLW_SECURE_CLIENT_PROOF_BYTES@;
+inline constexpr std::size_t kProtectedHeaderBytes = @AZLW_SECURE_PROTECTED_HEADER_BYTES@;
+inline constexpr std::size_t kProtectedOverheadBytes = @AZLW_SECURE_PROTECTED_OVERHEAD_BYTES@;
+
+inline constexpr char kServerProofLabel[] = "@AZLW_SECURE_SERVER_PROOF_LABEL@";
+inline constexpr char kClientProofLabel[] = "@AZLW_SECURE_CLIENT_PROOF_LABEL@";
+inline constexpr char kHostToAgentKeyLabel[] = "@AZLW_SECURE_HOST_TO_AGENT_KEY_LABEL@";
+inline constexpr char kAgentToHostKeyLabel[] = "@AZLW_SECURE_AGENT_TO_HOST_KEY_LABEL@";
+inline constexpr char kHostToAgentNonceLabel[] = "@AZLW_SECURE_HOST_TO_AGENT_NONCE_LABEL@";
+inline constexpr char kAgentToHostNonceLabel[] = "@AZLW_SECURE_AGENT_TO_HOST_NONCE_LABEL@";
+
+}  // namespace azlw::secure_channel_contract

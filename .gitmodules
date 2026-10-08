@@ -1,0 +1,6 @@
+[submodule "native/third_party/jsmn"]
+	path = native/third_party/jsmn
+	url = https://github.com/zserge/jsmn.git
+[submodule "native/third_party/Monocypher"]
+	path = native/third_party/Monocypher
+	url = https://github.com/LoupVaillant/Monocypher.git

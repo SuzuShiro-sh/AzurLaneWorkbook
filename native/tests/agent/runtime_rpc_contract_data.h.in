@@ -1,0 +1,18 @@
+// 将共用 RPC v1 JSON 契约中的冻结帧转换为原生测试数据。
+
+#pragma once
+
+namespace azlw::test_contract {
+
+inline constexpr char kHandshakeResponse[] =
+    R"azlwv1fixture(@AZLW_CONTRACT_HANDSHAKE_RESPONSE@)azlwv1fixture";
+inline constexpr char kSnapshotBagRequest[] =
+    R"azlwv1fixture(@AZLW_CONTRACT_SNAPSHOT_BAG_REQUEST@)azlwv1fixture";
+inline constexpr char kUnknownOperationRequest[] =
+    R"azlwv1fixture(@AZLW_CONTRACT_UNKNOWN_OPERATION_REQUEST@)azlwv1fixture";
+inline constexpr char kHealthResponse[] =
+    R"azlwv1fixture(@AZLW_CONTRACT_HEALTH_RESPONSE@)azlwv1fixture";
+inline constexpr char kErrorResponse[] =
+    R"azlwv1fixture(@AZLW_CONTRACT_ERROR_RESPONSE@)azlwv1fixture";
+
+}  // namespace azlw::test_contract
