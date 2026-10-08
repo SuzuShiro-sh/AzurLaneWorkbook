@@ -1,3 +1,3 @@
 [workspace]
-members = ["crates/artifact-publish", "crates/capability-core", "crates/cli-args", "crates/content-digest", "crates/controlled-root", "crates/host-command", "crates/json-framing", "crates/rpc-core", "crates/secure-channel", "crates/session-core", "crates/target-core", "crates/task-runtime", "crates/text-format"]
+members = ["crates/adb", "crates/artifact-publish", "crates/capability-core", "crates/cli-args", "crates/content-digest", "crates/controlled-root", "crates/emulator", "crates/host-command", "crates/json-framing", "crates/rpc-core", "crates/secure-channel", "crates/session-core", "crates/target-core", "crates/task-runtime", "crates/text-format"]
 resolver = "3"

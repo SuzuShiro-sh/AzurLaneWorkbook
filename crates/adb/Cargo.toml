@@ -1,0 +1,16 @@
+[package]
+name = "suzushiro-adb"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+publish = false
+description = "Owned ADB server lifecycle with explicit filesystem and log boundaries"
+
+[dependencies]
+serde_json = "1.0.151"
+thiserror = "2.0.20"
+suzushiro-controlled-root = { version = "0.1.0", path = "../controlled-root" }
+suzushiro-host-command = { version = "0.1.0", path = "../host-command" }
+
+[dev-dependencies]
+getrandom = "0.4.3"

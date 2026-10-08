@@ -1,0 +1,18 @@
+[package]
+name = "suzushiro-emulator"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+publish = false
+description = "Emulator discovery, normalized instances and bound remote command transport"
+
+[dependencies]
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+thiserror = "2.0.20"
+suzushiro-target-core = { version = "0.1.0", path = "../target-core" }
+suzushiro-host-command = { version = "0.1.0", path = "../host-command" }
+quick-xml = "=0.41.0"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "=0.61.2", features = ["Win32_Foundation", "Win32_NetworkManagement_IpHelper", "Win32_Networking_WinSock", "Win32_System_Diagnostics_ToolHelp", "Win32_System_Registry", "Win32_System_Threading"] }

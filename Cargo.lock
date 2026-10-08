@@ -185,6 +185,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "quick-xml"
+version = "0.41.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e660451e55124f798a69a5af3f49ccfbefbd41910eefd25caf2393e1f3473ec1"
+dependencies = [
+ "memchr",
+]
+
+[[package]]
 name = "quote"
 version = "1.0.47"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -254,6 +263,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "suzushiro-adb"
+version = "0.1.0"
+dependencies = [
+ "getrandom",
+ "serde_json",
+ "suzushiro-controlled-root",
+ "suzushiro-host-command",
+ "thiserror",
+]
+
+[[package]]
 name = "suzushiro-artifact-publish"
 version = "0.1.0"
 dependencies = [
@@ -293,6 +313,19 @@ version = "0.1.0"
 dependencies = [
  "getrandom",
  "libc",
+ "thiserror",
+ "windows-sys",
+]
+
+[[package]]
+name = "suzushiro-emulator"
+version = "0.1.0"
+dependencies = [
+ "quick-xml",
+ "serde",
+ "serde_json",
+ "suzushiro-host-command",
+ "suzushiro-target-core",
  "thiserror",
  "windows-sys",
 ]
